@@ -17,6 +17,7 @@ export class GrandparentComponent implements OnInit {
   ngOnInit(): void {
     this.posts = this.http.get('https://jsonplaceholder.typicode.com/posts').subscribe(data => {
       this.posts = data;
+      console.log("posts", this.posts);
     });
   }
 
